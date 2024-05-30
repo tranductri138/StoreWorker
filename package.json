@@ -1,0 +1,34 @@
+{
+  "name": "storeworker",
+  "version": "1.0.0",
+  "description": "this is backend worker to make message broker and message queue",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "serve": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tranductri138/StoreWorker.git"
+  },
+  "author": "trisdepzai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tranductri138/StoreWorker/issues"
+  },
+  "homepage": "https://github.com/tranductri138/StoreWorker#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "storeschema": "^1.1.1",
+    "xss-clean": "^0.1.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.13",
+    "nodemon": "^3.1.2"
+  }
+}
