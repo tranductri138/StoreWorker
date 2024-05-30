@@ -4,7 +4,7 @@ const helmet = require('helmet')
 const cors = require("cors")
 const xss = require('xss-clean')
 const { json } = require("express")
-const connectDB = require("./src/db/connect");
+const connectDB = require("./src/connect/mongoDB");
 const app = require('express')()
 const notFoundMiddleware = require('./src/middleware/not-found')
 
