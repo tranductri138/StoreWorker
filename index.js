@@ -1,4 +1,4 @@
-require('dotenv').config()
+require('dotenv').config({ path: process.env.NODE_ENV === 'prod' ? 'prod.env' : '.env' })
 
 const helmet = require('helmet')
 const cors = require("cors")
