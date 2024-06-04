@@ -21,8 +21,7 @@ services:
 volumes:
   redis_data:
 
-
 networks:
   network1:
-    name : storebackend_tris-web
+    name: storebackend_tris-web
     external: true
