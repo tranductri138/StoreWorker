@@ -18,8 +18,21 @@ services:
     networks:
       - network1
 
+  mysql:
+    image: mysql:8.4
+    restart: always
+    environment :
+      MYSQL_ROOT_PASSWORD : 'asd123'
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_db:/var/lib/mysql
+    networks:
+      - network1
+
 volumes:
   redis_data:
+  mysql_db:
 
 networks:
   network1:

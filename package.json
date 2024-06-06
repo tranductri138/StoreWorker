@@ -27,6 +27,7 @@
     "helmet": "^7.1.0",
     "ioredis": "^5.4.1",
     "mongoose": "7.6.3",
+    "mysql2": "^3.10.0",
     "redlock": "^4.2.0",
     "storeschema": "github:tranductri138/StoreSchema#develop/sp_worker",
     "xss-clean": "^0.1.4"
