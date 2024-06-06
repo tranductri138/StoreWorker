@@ -7,6 +7,7 @@ const { json } = require("express")
 const connectDB = require("./src/connect/mongoDB");
 const app = require('express')()
 const notFoundMiddleware = require('./src/middleware/not-found')
+const { connectToMySQL } = require("./src/connect/mySql");
 
 app.use(helmet())
 app.use(json())
@@ -19,7 +20,8 @@ app.use(notFoundMiddleware);
 
 const start = async () => {
     try {
-        await connectDB(process.env.MONGO_URI);
+         connectDB();
+         connectToMySQL()
         app.listen(port, () =>
             console.log(`Server is listening on port ${port}...`)
         );
